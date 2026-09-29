@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODAM - 포트폴리오</title>
+
+    <meta name="description"
+        content="MODAM 모담은 미드센추리 모던 감성을 현대적으로 재해석한 가구 브랜드입니다. 소파, 테이블, 체어, 수납가구 등 감각적인 디자인 가구로 나만의 공간을 완성해보세요." />
+    <meta name="keywords" content="모담, MODAM, 가구, 가구쇼핑몰, 디자인가구, 미드센추리모던, 인테리어가구, 소파, 테이블, 체어, 수납가구, 홈인테리어" />
+    <meta name="author" content="MODAM" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- 대표 URL -->
+    <link rel="canonical" href="https://www.modam.co.kr/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MODAM" />
+    <meta property="og:title" content="MODAM 모담 | Collect Style. Fill Life." />
+    <meta property="og:description"
+        content="공간에 취향을 모으고, 일상에 디자인을 담습니다. 미드센추리 모던 감성을 현대적으로 재해석한 MODAM의 가구 컬렉션을 만나보세요." />
+    <meta property="og:url" content="https://www.modam.co.kr/" />
+    <meta property="og:image" content="https://www.modam.co.kr/img/pc1.jpg" />
+    <meta property="og:locale" content="ko_KR" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <link rel="stylesheet" href="./css/product.css">
+    <script src="./js/header.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="./js/new-product.js"></script>
+    <script src="./js/review.js"></script>
+    <script src="./js/product-ui.js" defer></script>
+    <script src="./js/parameter.js"></script>
+    <script src="./js/won.js"></script>
+    <script src="./js/review-control.js" defer></script>
+</head>
+
+<body>
+    <script>
+        const productInfo = newProductArray.find(function (item) {
+            return item.pid === Number(getParameter('pid'))
+        })
+
+        const reviewInfo = reviewArray.filter(function (item) {
+            return item.pid === Number(getParameter('pid'))
+        })
+    </script>
+
+    <!-- 데스크탑용 헤더 -->
+    <header class="pc">
+        <div class="header-top">
+            <div class="common-frame">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/logo-black.svg" alt="MODAM로고 메인페이지로 이동">
+                    </a>
+                </div>
+                <div class="lnb-left">
+                    <ul class="user-menu-left">
+                        <li>
+                            <a href="#"><span>로그인</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>회원가입</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lnb-right">
+                    <ul class="user-menu-right">
+                        <li>
+                            <a href="#">
+                                <img src="./img/icn-search.svg" alt="검색하기">
+                            </a>
+                            <a href="#">
+                                <img src="./img/icn-cart.svg" alt="장바구니보기">
+                            </a>
+                            <a href="#">
+                                <img src="./img/icn-mypage.svg" alt="마이페이지">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="common-frame">
+                <ul class="gnb">
+                    <li>
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">NEW</a>
+                        <div class="gnb2depth">
+                            <div class="common-frame">
+                                <section>
+                                    <h4><a href="#">전체 신상품</a></h4>
+                                </section>
+                                <section>
+                                    <h4><a href="#">재입고</a></h4>
+                                    <ul>
+                                        <li><a href="#">인기 재입고</a></li>
+                                        <li><a href="#">품절 재입고</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">한정 제품</a></h4>
+                                    <ul>
+                                        <li><a href="#">리미티드 에디션</a></li>
+                                        <li><a href="#">브랜드 협업</a></li>
+                                        <li><a href="#">한정판</a></li>
+                                        <li><a href="#">에디터 추천</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">신제품 소식</a></h4>
+                                    <ul>
+                                        <li><a href="#">출시 예정</a></li>
+                                        <li><a href="#">브랜드 뉴스</a></li>
+                                        <li><a href="#">예약판매</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">SHOP</a>
+                        <div class="gnb2depth">
+                            <div class="common-frame">
+                                <section>
+                                    <h4><a href="#">가구</a></h4>
+                                    <ul>
+                                        <li><a href="#">소파</a></li>
+                                        <li><a href="#">테이블</a></li>
+                                        <li><a href="#">의자</a></li>
+                                        <li><a href="#">침대</a></li>
+                                        <li><a href="#">수납장</a></li>
+                                        <li><a href="#">서랍장</a></li>
+                                        <li><a href="#">선반</a></li>
+                                        <li><a href="#">화장대</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">조명</a></h4>
+                                    <ul>
+                                        <li><a href="#">펜던트 조명</a></li>
+                                        <li><a href="#">테이블 조명</a></li>
+                                        <li><a href="#">플로어 조명</a></li>
+                                        <li><a href="#">벽 조명</a></li>
+                                        <li><a href="#">천장 조명</a></li>
+                                        <li><a href="#">무드등</a></li>
+                                        <li><a href="#">LED 조명</a></li>
+                                        <li><a href="#">전구 & 악세서리</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">리빙</a></h4>
+                                    <ul>
+                                        <li><a href="#">거울</a></li>
+                                        <li><a href="#">수납용품</a></li>
+                                        <li><a href="#">욕실용품</a></li>
+                                        <li><a href="#">청소용품</a></li>
+                                        <li><a href="#">생활잡화</a></li>
+                                        <li><a href="#">세탁용품</a></li>
+                                        <li><a href="#">반려용품</a></li>
+                                        <li><a href="#">시즌용품</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">주방</a></h4>
+                                    <ul>
+                                        <li><a href="#">식기</a></li>
+                                        <li><a href="#">컵 & 머그</a></li>
+                                        <li><a href="#">조리도구</a></li>
+                                        <li><a href="#">냄비 & 프라이팬</a></li>
+                                        <li><a href="#">주방수납</a></li>
+                                        <li><a href="#">트레이</a></li>
+                                        <li><a href="#">와인 & 바용품</a></li>
+                                        <li><a href="#">주방가전</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">패브릭</a></h4>
+                                    <ul>
+                                        <li><a href="#">침구</a></li>
+                                        <li><a href="#">쿠션</a></li>
+                                        <li><a href="#">러그</a></li>
+                                        <li><a href="#">커튼</a></li>
+                                        <li><a href="#">블랭킷</a></li>
+                                        <li><a href="#">타월</a></li>
+                                        <li><a href="#">식탁보</a></li>
+                                        <li><a href="#">패브릭소품</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">데코</a></h4>
+                                    <ul>
+                                        <li><a href="#">액자</a></li>
+                                        <li><a href="#">화병</a></li>
+                                        <li><a href="#">오브제</a></li>
+                                        <li><a href="#">캔들 & 디퓨저</a></li>
+                                        <li><a href="#">벽장식</a></li>
+                                        <li><a href="#">시계</a></li>
+                                        <li><a href="#">플랜트</a></li>
+                                        <li><a href="#">시즌데코</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">오피스</a></h4>
+                                    <ul>
+                                        <li><a href="#">책상</a></li>
+                                        <li><a href="#">사무용의자</a></li>
+                                        <li><a href="#">책장</a></li>
+                                        <li><a href="#">데스크조명</a></li>
+                                        <li><a href="#">모니터받침대</a></li>
+                                        <li><a href="#">데스크정리</a></li>
+                                        <li><a href="#">문구</a></li>
+                                        <li><a href="#">홈오피스</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">세일</a></h4>
+                                    <ul>
+                                        <li><a href="#">특가상품</a></li>
+                                        <li><a href="#">오늘의딜</a></li>
+                                        <li><a href="#">시즌세일</a></li>
+                                        <li><a href="#">아울렛</a></li>
+                                        <li><a href="#">리퍼상품</a></li>
+                                        <li><a href="#">베스트특가</a></li>
+                                        <li><a href="#">1+1</a></li>
+                                        <li><a href="#">기획전</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">BEST</a>
+                        <div class="gnb2depth">
+                            <div class="common-frame">
+                                <section>
+                                    <h4><a href="#">베스트셀러</a></h4>
+                                    <ul>
+                                        <li><a href="#">전체 베스트</a></li>
+                                        <li><a href="#">가구별 베스트</a></li>
+                                        <li><a href="#">콜렉션 베스트</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">고객 리뷰</a></h4>
+                                    <ul>
+                                        <li><a href="#">리뷰 인기상품</a></li>
+                                        <li><a href="#">포토 리뷰</a></li>
+                                        <li><a href="#">만족도 BEST</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">MID 추천</a></h4>
+                                    <ul>
+                                        <li><a href="#">이번 주 추천</a></li>
+                                        <li><a href="#">공간별 추천</a></li>
+                                        <li><a href="#">스타일 추천</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">스테디셀러</a></h4>
+                                    <ul>
+                                        <li><a href="#">꾸준한 인기상품</a></li>
+                                        <li><a href="#">클래식 아이템</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">COLLECTION</a>
+                        <div class="gnb2depth">
+                            <div class="common-frame">
+                                <section>
+                                    <h4><a href="#">거실</a></h4>
+                                    <ul>
+                                        <li><a href="#">소파</a></li>
+                                        <li><a href="#">테이블</a></li>
+                                        <li><a href="#">TV장</a></li>
+                                        <li><a href="#">수납장</a></li>
+                                        <li><a href="#">러그</a></li>
+                                        <li><a href="#">조명</a></li>
+                                        <li><a href="#">오브제</a></li>
+                                        <li><a href="#">전체보기</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">침실</a></h4>
+                                    <ul>
+                                        <li><a href="#">침대</a></li>
+                                        <li><a href="#">협탁</a></li>
+                                        <li><a href="#">화장대</a></li>
+                                        <li><a href="#">옷장</a></li>
+                                        <li><a href="#">침구</a></li>
+                                        <li><a href="#">조명</a></li>
+                                        <li><a href="#">거울</a></li>
+                                        <li><a href="#">전체보기</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">다이닝</a></h4>
+                                    <ul>
+                                        <li><a href="#">식탁</a></li>
+                                        <li><a href="#">식탁의자</a></li>
+                                        <li><a href="#">주방 수납</a></li>
+                                        <li><a href="#">테이블웨어</a></li>
+                                        <li><a href="#">벤치</a></li>
+                                        <li><a href="#">조명</a></li>
+                                        <li><a href="#">전체보기</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">홈오피스</a></h4>
+                                    <ul>
+                                        <li><a href="#">책상</a></li>
+                                        <li><a href="#">오피스체어</a></li>
+                                        <li><a href="#">책장</a></li>
+                                        <li><a href="#">데스크 악세서리</a></li>
+                                        <li><a href="#">조명</a></li>
+                                        <li><a href="#">전체보기</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">라이프 공간</a></h4>
+                                    <ul>
+                                        <li><a href="#">키즈</a></li>
+                                        <li><a href="#">펫</a></li>
+                                        <li><a href="#">아웃도어</a></li>
+                                        <li><a href="#">플랜트</a></li>
+                                        <li><a href="#">전체보기</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">시즌 컬렉션</a></h4>
+                                    <ul>
+                                        <li><a href="#">Spring</a></li>
+                                        <li><a href="#">Summer</a></li>
+                                        <li><a href="#">Autumn</a></li>
+                                        <li><a href="#">Winter</a></li>
+                                        <li><a href="#">Holiday</a></li>
+                                        <li><a href="#">Limited</a></li>
+                                        <li><a href="#">Collaboration</a></li>
+                                        <li><a href="#">Archive</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">EVENT</a>
+                        <div class="gnb2depth">
+                            <div class="common-frame">
+                                <section>
+                                    <h4><a href="#">이벤트</a></h4>
+                                    <ul>
+                                        <li><a href="#">진행 중인 이벤트</a></li>
+                                        <li><a href="#">예정 이벤트</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">기획전</a></h4>
+                                    <ul>
+                                        <li><a href="#">신혼가구</a></li>
+                                        <li><a href="#">홈오피스</a></li>
+                                        <li><a href="#">여름 리빙</a></li>
+                                        <li><a href="#">겨울 리빙</a></li>
+                                        <li><a href="#">베스트 특가</a></li>
+                                        <li><a href="#">시즌 할인</a></li>
+                                        <li><a href="#">브랜드전</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">프로모션</a></h4>
+                                    <ul>
+                                        <li><a href="#">타임세일</a></li>
+                                        <li><a href="#">회원혜택</a></li>
+                                        <li><a href="#">패키지 할인</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">종료 이벤트</a></h4>
+                                    <ul>
+                                        <li><a href="#">종료 이벤트</a></li>
+                                        <li><a href="#">당첨자 발표</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT</a>
+                        <div class="gnb2depth">
+                            <div class="common-frame">
+                                <section>
+                                    <h4><a href="#">브랜드 소개</a></h4>
+                                    <ul>
+                                        <li><a href="#">브랜드 스토리</a></li>
+                                        <li><a href="#">브랜드 철학</a></li>
+                                        <li><a href="#">BI 소개</a></li>
+                                        <li><a href="#">지속가능성</a></li>
+                                        <li><a href="#">파트너십</a></li>
+                                        <li><a href="#">제작과정</a></li>
+                                        <li><a href="#">뉴스</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">쇼룸</a></h4>
+                                    <ul>
+                                        <li><a href="#">쇼룸 안내</a></li>
+                                        <li><a href="#">방문 예약</a></li>
+                                        <li><a href="#">위치 안내</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">고객지원</a></h4>
+                                    <ul>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">배송 안내</a></li>
+                                        <li><a href="#">교환/반품</a></li>
+                                        <li><a href="#">A/S</a></li>
+                                        <li><a href="#">문의하기</a></li>
+                                        <li><a href="#">공지사항</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">채용</a></h4>
+                                    <ul>
+                                        <li><a href="#">채용 안내</a></li>
+                                        <li><a href="#">복지</a></li>
+                                        <li><a href="#">지원하기</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 패드/모바일용 헤더 -->
+    <div class="smart-header">
+        <div class="common-frame">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./img/logo-black.svg" alt="MODAM로고 메인페이지로 이동">
+                </a>
+            </div>
+            <div class="btn-menu">
+                <a href="#">
+                    <img src="./img/icn-menu.svg" alt="전체메뉴열기">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 패드/모바일용 전체 메가메뉴 -->
+    <div class="smart-overlay-menu">
+        <div class="smart-overlay-menu-1">
+            <div class="common-frame">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/logo-black.svg" alt="MODAM로고 메인페이지로 이동">
+                    </a>
+                </div>
+                <div class="btn-menu-close">
+                    <a href="#">
+                        <img src="./img/icn-x.svg" alt="전체메뉴닫기">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="smart-overlay-menu-2">
+            <div class="common-frame">
+                <ul class="user-menu">
+                    <li>
+                        <a href="#">
+                            <img src="./img/icn-login.svg" alt="로그인">
+                        </a>
+                        <a href="#">
+                            <img src="./img/icn-membership.svg" alt="회원가입">
+                        </a>
+                        <a href="#">
+                            <img src="./img/icn-search.svg" alt="검색하기">
+                        </a>
+                        <a href="#">
+                            <img src="./img/icn-cart.svg" alt="장바구니보기">
+                        </a>
+                        <a href="#">
+                            <img src="./img/icn-mypage.svg" alt="마이페이지">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="smart-overlay-menu-top">
+            <div class="common-frame">
+                <ul class="gnb-smart">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#" class="on">NEW</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">BEST</a></li>
+                    <li><a href="#">COLLECTION</a></li>
+                    <li><a href="#">EVENT</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="smart-overlay-menu-bottom">
+            <div class="gnb2depth-smart on">
+                <div class="common-frame">
+                    <section>
+                        <h4><a href="#">전체 신상품</a></h4>
+                    </section>
+                    <section>
+                        <h4><a href="#">재입고</a></h4>
+                        <ul>
+                            <li><a href="#">인기 재입고</a></li>
+                            <li><a href="#">품절 재입고</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">한정 제품</a></h4>
+                        <ul>
+                            <li><a href="#">리미티드 에디션</a></li>
+                            <li><a href="#">브랜드 협업</a></li>
+                            <li><a href="#">한정판</a></li>
+                            <li><a href="#">에디터 추천</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">신제품 소식</a></h4>
+                        <ul>
+                            <li><a href="#">출시 예정</a></li>
+                            <li><a href="#">브랜드 뉴스</a></li>
+                            <li><a href="#">예약판매</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="gnb2depth-smart">
+                <div class="common-frame">
+                    <section>
+                        <h4><a href="#">가구</a></h4>
+                        <ul>
+                            <li><a href="#">소파</a></li>
+                            <li><a href="#">테이블</a></li>
+                            <li><a href="#">의자</a></li>
+                            <li><a href="#">침대</a></li>
+                            <li><a href="#">수납장</a></li>
+                            <li><a href="#">서랍장</a></li>
+                            <li><a href="#">선반</a></li>
+                            <li><a href="#">화장대</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">조명</a></h4>
+                        <ul>
+                            <li><a href="#">펜던트 조명</a></li>
+                            <li><a href="#">테이블 조명</a></li>
+                            <li><a href="#">플로어 조명</a></li>
+                            <li><a href="#">벽 조명</a></li>
+                            <li><a href="#">천장 조명</a></li>
+                            <li><a href="#">무드등</a></li>
+                            <li><a href="#">LED 조명</a></li>
+                            <li><a href="#">전구 & 악세서리</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">리빙</a></h4>
+                        <ul>
+                            <li><a href="#">거울</a></li>
+                            <li><a href="#">수납용품</a></li>
+                            <li><a href="#">욕실용품</a></li>
+                            <li><a href="#">청소용품</a></li>
+                            <li><a href="#">생활잡화</a></li>
+                            <li><a href="#">세탁용품</a></li>
+                            <li><a href="#">반려용품</a></li>
+                            <li><a href="#">시즌용품</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">주방</a></h4>
+                        <ul>
+                            <li><a href="#">식기</a></li>
+                            <li><a href="#">컵 & 머그</a></li>
+                            <li><a href="#">조리도구</a></li>
+                            <li><a href="#">냄비 & 프라이팬</a></li>
+                            <li><a href="#">주방수납</a></li>
+                            <li><a href="#">트레이</a></li>
+                            <li><a href="#">와인 & 바용품</a></li>
+                            <li><a href="#">주방가전</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">패브릭</a></h4>
+                        <ul>
+                            <li><a href="#">침구</a></li>
+                            <li><a href="#">쿠션</a></li>
+                            <li><a href="#">러그</a></li>
+                            <li><a href="#">커튼</a></li>
+                            <li><a href="#">블랭킷</a></li>
+                            <li><a href="#">타월</a></li>
+                            <li><a href="#">식탁보</a></li>
+                            <li><a href="#">패브릭소품</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">데코</a></h4>
+                        <ul>
+                            <li><a href="#">액자</a></li>
+                            <li><a href="#">화병</a></li>
+                            <li><a href="#">오브제</a></li>
+                            <li><a href="#">캔들 & 디퓨저</a></li>
+                            <li><a href="#">벽장식</a></li>
+                            <li><a href="#">시계</a></li>
+                            <li><a href="#">플랜트</a></li>
+                            <li><a href="#">시즌데코</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">오피스</a></h4>
+                        <ul>
+                            <li><a href="#">책상</a></li>
+                            <li><a href="#">사무용의자</a></li>
+                            <li><a href="#">책장</a></li>
+                            <li><a href="#">데스크조명</a></li>
+                            <li><a href="#">모니터받침대</a></li>
+                            <li><a href="#">데스크정리</a></li>
+                            <li><a href="#">문구</a></li>
+                            <li><a href="#">홈오피스</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">세일</a></h4>
+                        <ul>
+                            <li><a href="#">특가상품</a></li>
+                            <li><a href="#">오늘의딜</a></li>
+                            <li><a href="#">시즌세일</a></li>
+                            <li><a href="#">아울렛</a></li>
+                            <li><a href="#">리퍼상품</a></li>
+                            <li><a href="#">베스트특가</a></li>
+                            <li><a href="#">1+1</a></li>
+                            <li><a href="#">기획전</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="gnb2depth-smart">
+                <div class="common-frame">
+                    <section>
+                        <h4><a href="#">베스트셀러</a></h4>
+                        <ul>
+                            <li><a href="#">전체 베스트</a></li>
+                            <li><a href="#">가구별 베스트</a></li>
+                            <li><a href="#">콜렉션 베스트</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">고객 리뷰</a></h4>
+                        <ul>
+                            <li><a href="#">리뷰 인기상품</a></li>
+                            <li><a href="#">포토 리뷰</a></li>
+                            <li><a href="#">만족도 BEST</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">MID 추천</a></h4>
+                        <ul>
+                            <li><a href="#">이번 주 추천</a></li>
+                            <li><a href="#">공간별 추천</a></li>
+                            <li><a href="#">스타일 추천</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">스테디셀러</a></h4>
+                        <ul>
+                            <li><a href="#">꾸준한 인기상품</a></li>
+                            <li><a href="#">클래식 아이템</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="gnb2depth-smart">
+                <div class="common-frame">
+                    <section>
+                        <h4><a href="#">거실</a></h4>
+                        <ul>
+                            <li><a href="#">소파</a></li>
+                            <li><a href="#">테이블</a></li>
+                            <li><a href="#">TV장</a></li>
+                            <li><a href="#">수납장</a></li>
+                            <li><a href="#">러그</a></li>
+                            <li><a href="#">조명</a></li>
+                            <li><a href="#">오브제</a></li>
+                            <li><a href="#">전체보기</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">침실</a></h4>
+                        <ul>
+                            <li><a href="#">침대</a></li>
+                            <li><a href="#">협탁</a></li>
+                            <li><a href="#">화장대</a></li>
+                            <li><a href="#">옷장</a></li>
+                            <li><a href="#">침구</a></li>
+                            <li><a href="#">조명</a></li>
+                            <li><a href="#">거울</a></li>
+                            <li><a href="#">전체보기</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">다이닝</a></h4>
+                        <ul>
+                            <li><a href="#">식탁</a></li>
+                            <li><a href="#">식탁의자</a></li>
+                            <li><a href="#">주방 수납</a></li>
+                            <li><a href="#">테이블웨어</a></li>
+                            <li><a href="#">벤치</a></li>
+                            <li><a href="#">조명</a></li>
+                            <li><a href="#">전체보기</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">홈오피스</a></h4>
+                        <ul>
+                            <li><a href="#">책상</a></li>
+                            <li><a href="#">오피스체어</a></li>
+                            <li><a href="#">책장</a></li>
+                            <li><a href="#">데스크 악세서리</a></li>
+                            <li><a href="#">조명</a></li>
+                            <li><a href="#">전체보기</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">라이프 공간</a></h4>
+                        <ul>
+                            <li><a href="#">키즈</a></li>
+                            <li><a href="#">펫</a></li>
+                            <li><a href="#">아웃도어</a></li>
+                            <li><a href="#">플랜트</a></li>
+                            <li><a href="#">전체보기</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">시즌 컬렉션</a></h4>
+                        <ul>
+                            <li><a href="#">Spring</a></li>
+                            <li><a href="#">Summer</a></li>
+                            <li><a href="#">Autumn</a></li>
+                            <li><a href="#">Winter</a></li>
+                            <li><a href="#">Holiday</a></li>
+                            <li><a href="#">Limited</a></li>
+                            <li><a href="#">Collaboration</a></li>
+                            <li><a href="#">Archive</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="gnb2depth-smart">
+                <div class="common-frame">
+                    <section>
+                        <h4><a href="#">이벤트</a></h4>
+                        <ul>
+                            <li><a href="#">진행 중인 이벤트</a></li>
+                            <li><a href="#">예정 이벤트</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">기획전</a></h4>
+                        <ul>
+                            <li><a href="#">신혼가구</a></li>
+                            <li><a href="#">홈오피스</a></li>
+                            <li><a href="#">여름 리빙</a></li>
+                            <li><a href="#">겨울 리빙</a></li>
+                            <li><a href="#">베스트 특가</a></li>
+                            <li><a href="#">시즌 할인</a></li>
+                            <li><a href="#">브랜드전</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">프로모션</a></h4>
+                        <ul>
+                            <li><a href="#">타임세일</a></li>
+                            <li><a href="#">회원혜택</a></li>
+                            <li><a href="#">패키지 할인</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">종료 이벤트</a></h4>
+                        <ul>
+                            <li><a href="#">종료 이벤트</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="gnb2depth-smart">
+                <div class="common-frame">
+                    <section>
+                        <h4><a href="#">브랜드 소개</a></h4>
+                        <ul>
+                            <li><a href="#">브랜드 스토리</a></li>
+                            <li><a href="#">브랜드 철학</a></li>
+                            <li><a href="#">BI 소개</a></li>
+                            <li><a href="#">지속가능성</a></li>
+                            <li><a href="#">파트너십</a></li>
+                            <li><a href="#">제작과정</a></li>
+                            <li><a href="#">뉴스</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">쇼룸</a></h4>
+                        <ul>
+                            <li><a href="#">쇼룸 안내</a></li>
+                            <li><a href="#">방문 예약</a></li>
+                            <li><a href="#">위치 안내</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">고객지원</a></h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">배송 안내</a></li>
+                            <li><a href="#">교환/반품</a></li>
+                            <li><a href="#">A/S</a></li>
+                            <li><a href="#">문의하기</a></li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">채용</a></h4>
+                        <ul>
+                            <li><a href="#">채용 안내</a></li>
+                            <li><a href="#">복지</a></li>
+                            <li><a href="#">지원하기</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="info-product">
+            <div class="common-frame">
+                <div class="product-img">
+                    <figure class="thumnail-big">
+                        <img src="./img/new1.jpg" alt="LUNO 루노 커브 소파">
+                    </figure>
+                    <script>
+                        document.querySelector('.thumnail-big').innerHTML = `<img src="./img/${productInfo.pthumbFileName}" alt="${productInfo.pname}">`
+                    </script>
+                    <div class="horizontal-sctoll-gallery">
+                        <div class="train-horizontal">
+                            <figure><img src="./img/product-LUNO1.jpg" alt="LUNO 루노 커브 소파 오른쪽 45도샷"></figure>
+                            <figure><img src="./img/product-LUNO2.jpg" alt="LUNO 루노 커브 소파 정면샷"></figure>
+                            <figure><img src="./img/product-LUNO3.jpg" alt="LUNO 루노 커브 소파 왼쪽 45도샷"></figure>
+                            <figure><img src="./img/product-LUNO4.jpg" alt="LUNO 루노 커브 소파 확대샷"></figure>
+                            <figure><img src="./img/product-LUNO5.jpg" alt="LUNO 루노 커브 소파 질감샷"></figure>
+                            <figure><img src="./img/product-LUNO6.jpg" alt="LUNO 루노 커브 소파 크기정보"></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-txt">
+                    <div class="product-name">
+                        <span class="category-badge">NEW</span>
+                        <div class="product-title">[MODAM] LUNO 루노 3인 패브릭 모듈 소파</div>
+                    </div>
+                    <div class="pay-frame product-pay">
+                        <div class="pay-original">
+                            <span>1,890,000</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">20%</div>
+                            <div class="pay"><b>1,512,000</b>원</div>
+                        </div>
+                    </div>
+
+                    <div class="benefits">
+                        <dl class="benefit str">
+                            <dt>회원혜택</dt>
+                            <dd>
+                                <ul class="benefit-list">
+                                    <li>
+                                        <span>상품할인</span>
+                                        <div class="price-benefit">
+                                            <span><b>1,512,000</b>원 <i>5%</i></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>장바구니 할인</span>
+                                        <div class="price-benefit">
+                                            <span><b>1,436,400</b>원 <i>5%</i></span>
+                                            <p class="tip-benefit">주문서 작성 시 가격이 적용됩니다.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd><a href="#" class="btn-coupon">전체쿠폰받기<img src="./img/icn-download.svg" alt="전체쿠폰받기"></a>
+                            </dd>
+                        </dl>
+
+                        <dl class="benefit">
+                            <dt>추가혜택</dt>
+                            <dd>
+                                <ul class="benefit-list">
+                                    <li>
+                                        <span>무이자 할부</span>
+                                        <div class="desc-benefit">
+                                            월 239,400원 · 최대 6개월
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>카드</span>
+                                        <div class="desc-benefit">
+                                            삼성카드 1,426,400원 · 10,000원 즉시 할인
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd><a href="#" class="btn-line">더보기</a></dd>
+                        </dl>
+
+                        <dl class="benefit">
+                            <dt>포인트</dt>
+                            <dd>
+                                <ul class="benefit-list">
+                                    <li>
+                                        <span>M.Point</span>
+                                        <div class="desc-benefit">
+                                            1,436P (결제 금액의 0.1%)
+                                            <p class="tip-benefit">MODAM 멤버십 회원 시 적립 가능합니다.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd><a href="#" class="btn-line">더보기</a></dd>
+                        </dl>
+
+                        <dl class="benefit">
+                            <dt>배송정보</dt>
+                            <dd>
+                                <p class="delivery-info">무료배송 (제주도 및 도서산간 제외) / 희망 배송일 지정, 오직 MODAM 공식몰에서만</p>
+                            </dd>
+                            <dd><a href="#" class="btn-line">자세히보기</a></dd>
+                        </dl>
+                    </div>
+
+                    <div class="pay-info">
+                        총 합계금액 <b>1,426,000</b>원
+                        <p class="tip-info">※ 회원 혜택가는 로그인 후, 주문서 작성시 적용 가능합니다.</p>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="#" class="btn-cart">장바구니</a>
+                        <a href="#" class="btn-buy">구매하기</a>
+                    </div>
+                </div>
+                <script>
+                    document.querySelector('.product-txt').innerHTML = `<div class="product-name">
+                        <span class="category-badge">NEW</span>
+                        <div class="product-title">[MODAM] ${productInfo.pname}</div>
+                    </div>
+                    <div class="pay-frame product-pay">
+                        ${productInfo.pdiscount ? `<div class="pay-original">
+                            <span>${won(productInfo.price)}</span>원
+                        </div>        
+                        <div class="pay-discount">
+                            <div class="discount">${productInfo.pdiscount * 100}%</div>
+                            <div class="pay"><b>${won(productInfo.price - (productInfo.price * productInfo.pdiscount))}</b>원</div>
+                        </div>`: `<div class="pay"><b>${won(productInfo.price - (productInfo.price * productInfo.pdiscount))}</b>원</div>`}
+                        
+                    </div>
+                    <div class="benefits">
+                        <dl class="benefit str">
+                            <dt>회원혜택</dt>
+                            <dd>
+                                <ul class="benefit-list">
+                                    <li>
+                                        <span>상품할인</span>
+                                        <div class="price-benefit">
+                                            <span><b>1,512,000</b>원 <i>5%</i></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>장바구니 할인</span>
+                                        <div class="price-benefit">
+                                            <span><b>1,436,400</b>원 <i>5%</i></span>
+                                            <p class="tip-benefit">주문서 작성 시 가격이 적용됩니다.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd><a href="#" class="btn-coupon">전체쿠폰받기<img src="./img/icn-download.svg" alt="전체쿠폰받기"></a>
+                            </dd>
+                        </dl>
+
+                        <dl class="benefit">
+                            <dt>추가혜택</dt>
+                            <dd>
+                                <ul class="benefit-list">
+                                    <li>
+                                        <span>무이자 할부</span>
+                                        <div class="desc-benefit">
+                                            월 239,400원 · 최대 6개월
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>카드</span>
+                                        <div class="desc-benefit">
+                                            삼성카드 1,426,400원 · 10,000원 즉시 할인
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd><a href="#" class="btn-line">더보기</a></dd>
+                        </dl>
+
+                        <dl class="benefit">
+                            <dt>포인트</dt>
+                            <dd>
+                                <ul class="benefit-list">
+                                    <li>
+                                        <span>M.Point</span>
+                                        <div class="desc-benefit">
+                                            1,436P (결제 금액의 0.1%)
+                                            <p class="tip-benefit">MODAM 멤버십 회원 시 적립 가능합니다.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd><a href="#" class="btn-line">더보기</a></dd>
+                        </dl>
+
+                        <dl class="benefit">
+                            <dt>배송정보</dt>
+                            <dd>
+                                <p class="delivery-info">무료배송 (제주도 및 도서산간 제외) / 희망 배송일 지정, 오직 MODAM 공식몰에서만</p>
+                            </dd>
+                            <dd><a href="#" class="btn-line">자세히보기</a></dd>
+                        </dl>
+                    </div>
+
+                    <div class="pay-info">
+                        총 합계금액 <b>${won(productInfo.price - (productInfo.price * productInfo.pdiscount))}</b>원
+                        <p class="tip-info">※ 회원 혜택가는 로그인 후, 주문서 작성시 적용 가능합니다.</p>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="#" class="btn-cart">장바구니</a>
+                        <a href="#" class="btn-buy">구매하기</a>
+                    </div>`
+                </script>
+            </div>
+        </section>
+
+        <section class="product-detail-info">
+            <div class="common-frame">
+                <ul class="sticky-product-menu">
+                    <li><a class="on" href="#product-detail-1">상품정보</a></li>
+                    <li><a href="#product-detail-2">상품리뷰</a></li>
+                    <li><a href="#product-detail-3">배송&middot;반품&middot;교환 안내</a></li>
+                </ul>
+                <div id="product-detail-1">
+                    <img src="./img/Product-Page.jpg" alt="상세페이지">
+                </div>
+                <div id="product-detail-2">
+                    <h2>상품리뷰</h2>
+                    <ul class="review">
+                        <li>
+                            <div class="review-user">
+                                <span class="rev-name">이*희</span>
+                                <span class="rev-date">2026.09.16</span>
+                            </div>
+                            <div class="review-content">
+                                <div class="stars">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                </div>
+                                <div class="review-txt fold">
+                                    <p>
+                                        처음에는 예뻐서 골랐는데, 지금은 집에서 가장 오래 머무는 자리가 됐어요. 이사하면서 가장 오래 고민했던 가구가 소파였어요. 저희는 두 사람이
+                                        함께 살고 거실이 아주 넓지는 않아서, 공간을 답답하게 채우지 않으면서 편하게 쉴 수 있는 제품을 찾고 있었어요. 기존에 사용하던 진한 회색
+                                        소파는 새집의 밝은 벽과 우드 가구 사이에서 조금 무거워 보여서, 이번에는 밝고 부드러운 분위기로 바꾸고 싶었어요. 루노는 처음 봤을 때부터
+                                        곡선이 기억에 남았어요. 둥근 디자인이지만 지나치게 귀여운 느낌은 아니고 전체적인 인상이 차분했거든요. 특히 등받이에서 팔걸이까지 자연스럽게
+                                        이어지는 모양이 좋았어요. 저희 집은 현관에서 들어오면 소파의 옆모습이 먼저 보이는데, 여러 방향에서 봐도 자연스럽겠다는 생각이 들었어요. 구매
+                                        당시 가격은 정상가 1,890,000원에서 20% 할인된 1,512,000원이었어요. 쉽게 결정할 금액은 아니라 다른 제품과도 오래 비교했지만,
+                                        매일 사용하는 가구인 만큼 정말 마음에 드는 제품을 고르기로 했어요. 주문 전에는 바닥에 줄자로 크기를 표시하고 테이블과의 간격, 베란다로
+                                        나가는 동선까지 확인했는데, 막연하게 크지 않을까 걱정하는 것보다 도움이 됐어요. 크림색은 관리 때문에 마지막까지 고민했어요. 그런데 제가
+                                        저장해둔 거실 사진이 대부분 밝은 소파와 우드 가구 조합이더라고요. 걱정 때문에 다른 색을 고르면 계속 아쉬울 것 같아서 취향을 먼저
+                                        생각했어요. 실제로 설치해보니 저희 집에서는 새하얗게 튀기보다 벽과 커튼에 자연스럽게 어우러지는 차분한 크림색으로 느껴졌어요. 소파 하나 바꿨을
+                                        뿐인데 거실 분위기도 부드러워졌어요. 식탁이나 수납장처럼 직선적인 가구 사이에 곡선이 들어오니까 단정하기만 했던 공간에 여유가 생긴 느낌이에요.
+                                        기존 우드 테이블과도 잘 어울려서 주변 가구까지 새로 맞출 필요는 없었어요. 하단에 살짝 보이는 월넛 톤 다리도 전체적인 분위기를 자연스럽게
+                                        연결해줘요. 착석감은 제 기준으로 깊게 푹 꺼지는 느낌보다는 포근하면서 적당히 받쳐주는 쪽에 가까웠어요. 처음에는 새 소파라 조심해서 앉았지만,
+                                        지금은 다리를 접거나 쿠션을 옆에 끼고 편하게 쉬어요. 퇴근 후 남편과 나란히 앉아 하루 이야기를 나누거나 주말에 영화를 볼 때도 각자 편한
+                                        자리를 잡기 좋아요. 다만 머리까지 받쳐주는 높은 등받이를 원하신다면 취향이 갈릴 것 같아요. 저는 시야를 많이 가리지 않는 낮은 실루엣이
+                                        좋아서 선택했고, 깊게 기대고 싶은 날에는 쿠션을 조정해서 사용해요. 둥근 팔걸이에 컵을 올려두기보다는 옆 테이블을 이용하고요. 평소 소파에서
+                                        어떤 자세로 쉬는지 생각해보고 고르면 좋겠어요. 패브릭은 가까이에서 볼수록 마음에 들어요. 멀리서는 차분한 단색이지만 가까이 보면 부클레 특유의
+                                        입체적인 결이 보여서 밋밋하지 않아요. 햇빛이 옆에서 들어오면 표면에 은은하게 명암이 생기는 것도 예뻐요. 매끈한 원단과는 다른 촉감인데, 저는
+                                        이런 질감이 포근하게 느껴져서 좋아요. 밝은 색이라 관리에 전혀 신경이 쓰이지 않는 건 아니에요. 작은 이물질이나 생활 흔적에 눈이 더 가서
+                                        소파에서 음식을 먹는 횟수를 줄이고 음료는 테이블에 놓고 마셔요. 또 낮은 디자인이기 때문에 하부 청소 공간이 중요하다면 높이를 확인해보시는 게
+                                        좋겠어요. 아직 사용한 지 한 달 정도라 오래 썼을 때의 상태까지는 이야기하기 어렵고, 관리는 안내된 방법을 확인하면서 하려고 해요. 스타일링은
+                                        예상보다 쉬웠어요. 지금은 머스터드색과 차분한 청록색 쿠션을 하나씩 두고 있는데, 크림색 바탕이라 작은 포인트도 잘 보여요. 소파 자체에 곡선과
+                                        질감이 있어서 소품을 많이 놓지 않아도 괜찮더라고요. 담요와 읽던 책이 놓여 있는 평소의 모습도 편안해 보여서 마음에 들어요. 요즘 가장
+                                        좋아하는 시간은 주말 아침이에요. 커튼을 열고 소파에 앉아 책을 읽거나 창밖을 바라보는데, 예전보다 거실에 머무는 시간이 늘었어요. 저녁에는 옆
+                                        조명만 켜두고 쉬기도 해요. 낮에는 환하고 밤에는 차분해서 같은 공간을 조금씩 다르게 즐기는 기분이에요. 한 달 정도 사용한 지금은 다시
+                                        고르더라도 같은 선택을 할 것 같아요. 저희가 원했던 밝은 색감과 부드러운 형태, 우드 가구와의 조화에 잘 맞았어요. 처음에는 예뻐서 골랐지만
+                                        지금은 그 위에서 보내는 시간이 좋아서 더 만족해요. 예쁘게 놓아두고 싶은 가구가 자연스럽게 앉아 쉬고 싶은 자리가 됐다는 점이 가장 마음에
+                                        들어요.
+                                    </p>
+                                    <button class="btn-rvtxt">더보기<img src="./img/icn-down.svg" alt="더보기아이콘"></button>
+                                </div>
+                                <div class="review-img">
+                                    <ul class="review-gallery">
+                                        <li><img src="./img/review1.jpg" alt="리뷰이미지1"></li>
+                                        <li><img src="./img/review2.jpg" alt="리뷰이미지2"></li>
+                                        <li><img src="./img/review3.jpg" alt="리뷰이미지3"></li>
+                                        <li><img src="./img/review4.jpg" alt="리뷰이미지4"></li>
+                                        <li><img src="./img/review5.jpg" alt="리뷰이미지5"></li>
+                                        <li><img src="./img/review6.jpg" alt="리뷰이미지6"></li>
+                                    </ul>
+                                </div>
+                                <div class="review-etc">
+                                    <a href="#"><img src="./img/icn-thumbs-up.svg" alt="유용해요">유용해요</a>
+                                    <a href="#"><img src="./img/icn-siren.svg" alt="신고차단">신고 차단</a>
+                                </div>
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+                <div id="product-detail-3">
+                    <h2>배송&middot;반품&middot;교환 안내</h2>
+                    <table class="product-table">
+                        <tr>
+                            <th>배송유형</th>
+                            <td>MODAM 직접배송</td>
+                        </tr>
+                        <tr>
+                            <th>배송료</th>
+                            <td>
+                                <ul class="product-del-table-list">
+                                    <li>기본 배송비: 무료</li>
+                                    <li>제주 지역 배송비 안내: 제주도민-무료/ 제주도민이 아닌 고객이 제주도로 배송 요청시: 배송비가 결제 금액에 따라 부과</li>
+                                    <li>상세 배송비는 결제 화면에서 확인하실 수 있습니다.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>배송기간</th>
+                            <td>
+                                설치제품, 가구제품: 배송기간은 주문 후 4~5일 정도 소요 됩니다. 결제 후 SMS, 알림톡 또는 유선을 통해 배송일을 안내 드립니다.<br>
+                                단, 주문의 폭주로 인한 택배지연, 수입지연, 천재지변 등의 경우가 발생되었을 때, 배송이 지연될 수 있으며 이러한 경우 사전에 고객께 SMS, 메일, 혹은
+                                유선을 통한 연락으로 배송지연을 안내드리며 상담을 통해 배송일을 재조정 하실 수 있습니다.
+                                가구 외 제품: 주문 후 4~10일 정도 소요 됩니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>배송일 및 배송지 변경</th>
+                            <td>
+                                배송일 3일 전까지 변경이 가능합니다. (내일배송을 선택하신 경우, 주문 당일 13시까지만 변경 가능)
+                                변경을 원하시는 고객님께서는 모담 고객센터 또는 고객상담실(1588-1234)을 이용해주시기 바랍니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>배송 불가 지역</th>
+                            <td>
+                                도서산간 지역의 경우 배송이 불가할 수 있습니다. (제주도는 배송 가능하며, 별도 배송비가 부과됩니다.)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>유의사항</th>
+                            <td>
+                                <ul class="product-del-table-list">
+                                    <li>
+                                        현장 상황에 따른 추가 장비 사용 시 고객님 부담 비용이 발생될 수 있습니다.
+                                        <a href="#">내용 더 보기</a>
+                                        <p class="del-desc">
+                                            (사다리차 비용, 엘리베이터 사용료, 지게차 사용료 등 / 입구 협소 등의 이유로 발생) <br>
+                                            ※ 총 결제금액 300만 원 이상인 경우, 사다리차 필요시 전액 무상 지원됩니다.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        엘리베이터나 사다리차 사용이 불가한 현장 상황으로 엔지니어가 직접 제품을 들고 운반할 경우 비용이 추가 부과될 수 있습니다.
+                                        <a href="#">내용 더 보기</a>
+                                    </li>
+                                    <li>원활한 설치작업 진행을 위해 설치작업 공간 확보 부탁드립니다.(3m * 3m)</li>
+                                    <li>설치될 공간에 기존 사용 제품이 위치한 경우 배송 전 미리 정리를 부탁드립니다. 설치 지연 및 추가 비용이 발생될 수 있습니다.</li>
+                                    <li>
+                                        기존에 사용하시던 상품에 추가 설치가 필요한 상품을 구매하실 경우, 현장 추가 작업비용이 발생할 수 있습니다.
+                                        <a href="#">내용 더 보기</a>
+                                        <p class="del-desc">자세한 내용은 고객상담실(1588-1234)로 문의 부탁드립니다.</p>
+                                    </li>
+                                    <li>배송지가 다른 경우 주문 분리가 불가하오니 주소별 개별 주문해 주시기 바랍니다.</li>
+                                    <li>
+                                        보다 신속한 배송 서비스 제공을 위해 일부 지역에서는 요일별 배송제를 시행하고 있습니다.
+                                        <a href="#">내용 더 보기</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="common-frame">
+            <div class="foot-navi">
+                <div class="foot1">
+                    <ul class="footmenu">
+                        <li><a href="#">이용약관</a></li>
+                        <li class="stli"><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">사업자정보확인</a></li>
+                    </ul>
+                    <dl class="coinfo">
+                        <dt>회사명</dt>
+                        <dd>㈜모담 (MODAM Co., Ltd.)</dd>
+                        <dt>대표</dt>
+                        <dd>김하경</dd>
+                        <dt>사업자등록번호</dt>
+                        <dd>123-45-67890</dd>
+                        <dt>통신판매업신고</dt>
+                        <dd>2026-포트폴리오-1234</dd>
+                        <dt>주소</dt>
+                        <dd>
+                            <address>경기도 성남시 포트폴리오 104, MODAM Studio</address>
+                        </dd>
+                        <dt>대표번호</dt>
+                        <dd>1588-1234</dd>
+                        <dt>이메일</dt>
+                        <dd>hello@modam.kr</dd>
+                        <dt>개인정보관리책임자</dt>
+                        <dd>모담이</dd>
+                    </dl>
+                </div>
+                <div class="foot2">
+                    <ul class="sns">
+                        <li><a href="#"><img src="./img/insta.svg" alt="MODAM 인스타 바로가기"></a></li>
+                        <li><a href="#"><img src="./img/youtube.svg" alt="MODAM 유튜브 바로가기"></a></li>
+                    </ul>
+                    <div class="logof">
+                        <img src="./img/logo-white.svg" alt="MODAM로고">
+                        <div class="slogan">COLLECT STYLE. FILL LIFE.</div>
+                        <div class="brand-desc">감각적인 디자인으로 일상의 가치를 더합니다<br>
+                            모던한 디자인과 감각적인 컬러를 담은 라이프스타일 가구 브랜드입니다</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cscenter">
+                <div class="cscon">
+                    <h2>고객센터 <a href="tel:15881234">1588-1234</a></h2>
+                    <dl class="cstime">
+                        <dt>평일</dt>
+                        <dd>09:30 - 18:00</dd>
+                        <dt>점심시간</dt>
+                        <dd>12:30 - 13:30</dd>
+                        <dt class="dayoff">토 · 일 · 공휴일 휴무</dt>
+                    </dl>
+                </div>
+            </div>
+            <div class="copy">
+                © 2026 MODAM. All Rights Reserved. 취업용도 포트폴리오 홈페이지입니다
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
