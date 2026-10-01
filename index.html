@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODAM - 포트폴리오</title>
+
+    <meta name="description"
+        content="MODAM 모담은 미드센추리 모던 감성을 현대적으로 재해석한 가구 브랜드입니다. 소파, 테이블, 체어, 수납가구 등 감각적인 디자인 가구로 나만의 공간을 완성해보세요." />
+    <meta name="keywords" content="모담, MODAM, 가구, 가구쇼핑몰, 디자인가구, 미드센추리모던, 인테리어가구, 소파, 테이블, 체어, 수납가구, 홈인테리어" />
+    <meta name="author" content="MODAM" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- 대표 URL -->
+    <link rel="canonical" href="https://www.modam.co.kr/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MODAM" />
+    <meta property="og:title" content="MODAM 모담 | Collect Style. Fill Life." />
+    <meta property="og:description"
+        content="공간에 취향을 모으고, 일상에 디자인을 담습니다. 미드센추리 모던 감성을 현대적으로 재해석한 MODAM의 가구 컬렉션을 만나보세요." />
+    <meta property="og:url" content="https://www.modam.co.kr/" />
+    <meta property="og:image" content="https://www.modam.co.kr/img/pc1.jpg" />
+    <meta property="og:locale" content="ko_KR" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
+    <!-- 제품정보 -->
+    <script src="./js/product.js"></script>
+    <script src="./js/product-control.js" defer></script>
+    
+    <!--공통헤더 / 푸터 파일 연결  -->
+    <script src="./js/include.js" defer></script>
+    <script src="./js/header.js" defer></script>
+</head>
+
+<body>
+    <div id="header-wrap">
+        <!-- header.html 파일의 내용이 들어오는 영역 -->
+    </div>
+
+    <main>
+        <!-- 히어로 배너 슬라이드 -->
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="pc" src="./img/pc1.jpg" alt="COLLECT STYLE. FILL LIFE.">
+                    <img class="pad" src="./img/pad1.jpg" alt="COLLECT STYLE. FILL LIFE.">
+                    <img class="mo" src="./img/mo1.jpg" alt="COLLECT STYLE. FILL LIFE.">
+                </div>
+                <div class="swiper-slide">
+                    <img class="pc" src="./img/pc2.jpg" alt="여름을 더 시원하게 모담이 전하는 특별한 혜택 30%할인이벤트">
+                    <img class="pad" src="./img/pad2.jpg" alt="여름을 더 시원하게 모담이 전하는 특별한 혜택 30%할인이벤트">
+                    <img class="mo" src="./img/mo2.jpg" alt="여름을 더 시원하게 모담이 전하는 특별한 혜택 30%할인이벤트">
+                </div>
+                <div class="swiper-slide">
+                    <img class="pc" src="./img/pc3.jpg" alt="모던한 디자인, 섬세한 디테일. 모담의 새로운 컬렉션을 만나보세요.">
+                    <img class="pad" src="./img/pad3.jpg" alt="모던한 디자인, 섬세한 디테일. 모담의 새로운 컬렉션을 만나보세요.">
+                    <img class="mo" src="./img/mo3.jpg" alt="모던한 디자인, 섬세한 디테일. 모담의 새로운 컬렉션을 만나보세요.">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script>
+            const station = new Swiper('.hero-slider', {
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                speed: 1000
+            });
+        </script>
+
+        <!-- 띠배너 -->
+        <div class="banner-line">
+            <div class="common-frame">
+                <span>NOTICE</span>
+                <h4>WHAT’S NEW AT MODAM?</h4>
+                <p>새로운 이야기부터 쇼핑에 필요한 안내까지, MODAM의 최신 소식을 만나보세요</p>
+                <a href="#" class="btn-style">Discover More <img src="./img/icn-right.svg" alt="공지사항 바로가기"></a>
+            </div>
+        </div>
+
+        <!-- 카테고리섹션 -->
+        <section class="con1">
+            <div class="common-frame">
+                <div class="title">
+                    <h1>SHOP BY SPACE</h1>
+                    <span></span>
+                    <p>당신의 일상을 채우는 MODAM의 공간별 컬렉션을 만나보세요.</p>
+                </div>
+                <div class="swiper cardlist-wrap">
+                    <ul class="cardlist swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="cover">LIVING ROOM</div>
+                                <img src="./img/con1-1.jpg" alt="living room 콜렉션 바로가기">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="cover">DINING ROOM</div>
+                                <img src="./img/con1-2.jpg" alt="dining room 콜렉션 바로가기">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="cover">KITCHEN</div>
+                                <img src="./img/con1-3.jpg" alt="kitchen 콜렉션 바로가기">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="cover">BEDROOM</div>
+                                <img src="./img/con1-4.jpg" alt="bedroom 콜렉션 바로가기">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <script>
+                    const cardlist = new Swiper('.cardlist-wrap', {
+                        breakpoints: {
+                            100: {
+                                slidesPerView: 1.3,
+                                spaceBetween: 12,
+                            },
+                            340: {
+                                slidesPerView: 2.3,
+                                spaceBetween: 12,
+                            },
+                            768: {
+                                slidesPerView: 3.3,
+                                spaceBetween: 14,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 16,
+                            },
+                        },
+                        autoplay: {
+                            delay: 3000
+                        }
+                    });
+                </script>
+            </div>
+        </section>
+
+        <!-- 사용자스토리섹션 -->
+        <section class="con2">
+            <div class="common-frame">
+                <div class="title">
+                    <h1>MODAM STORIES</h1>
+                </div>
+                <div class="swiper review-story-wrap">
+                    <ul class="review-story swiper-wrapper">
+                        <li class="swiper-slide">
+                            <figure>
+                                <img src="./img/con2-1.jpg" alt="LUNO 3 SEATER SOFA / 루노 3인 소파 스토리 섬네일">
+                            </figure>
+                            <div class="story-txt">
+                                <div class="stars">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                </div>
+                                <h4 class="title-1">소파 하나 바꿨는데 거실 분위기가 완전히 달라졌어요</h4>
+                                <p class="desc-1">거실에서 보내는 시간이 많아서 소파는 정말 오래 고민하고 골랐어요. 처음에는 머스터드 컬러가 집에서 너무 튀지는 않을까
+                                    걱정했는데 막상 배치해보니
+                                    생각보다 차분하고 월넛 가구와도 잘 어울리더라고요. 좌방석이 넉넉해서 둘이 앉아도 여유롭고 주말에는 거의 소파에서 책을 읽거나 영화를 보면서 시간을
+                                    보내고 있습니다. 등받이가 너무 높지 않아서 거실이 답답해 보이지 않는 것도 마음에 들어요. 디자인만 보고 선택했는데 실제로 사용해보니 착석감도 편해서
+                                    만족도가 더 높았습니다. 이전에는 조금 밋밋했던 거실에 확실한 포인트가 생긴 것 같아요.</p>
+                            </div>
+                            <div class="story-product">
+                                <a href="#">
+                                    <figure>
+                                        <span class="like-badge"><img src="./img/heart-1.svg" alt="좋아요하트">68</span>
+                                        <img src="./img/c2-1.jpg" alt="LUNO 3 SEATER SOFA / 루노 3인 소파">
+                                    </figure>
+                                    <div class="story-product-txt">
+                                        <div class="product-name">
+                                            LUNO 3 SEATER SOFA / 루노 3인 소파
+                                        </div>
+                                        <div class="product-category">
+                                            거실 · 소파
+                                        </div>
+                                        <!-- <div class="pay-original">
+                                            <span>890,000</span>원
+                                        </div> -->
+                                        <div class="pay-discount">
+                                            <!-- <div class="discount">30%</div> -->
+                                            <div class="pay"><b>890,000</b>원</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <img src="./img/con2-2.jpg" alt="MORI OVAL DINING TABLE / 모리 오벌 다이닝 테이블 스토리 섬네일">
+                            </figure>
+                            <div class="story-txt">
+                                <div class="stars">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                </div>
+                                <h4>식사보다 이 테이블에 앉아 있는 시간이 더 길어진 것 같아요</h4>
+                                <p>집이 넓은 편이 아니라 원형 테이블과 사각 테이블 중에서 정말 고민을 많이 했는데 타원형으로 선택하길 잘한 것 같아요. 모서리가 없어서 동선이 편하고
+                                    생각했던 것보다 공간도 답답해 보이지 않습니다. 월넛 컬러가 너무 어둡지 않고 적당히 따뜻해서 기존에 사용하던 밝은 의자들과도 잘 어울렸어요. 처음에는
+                                    식탁으로만 생각했는데 요즘은 아침에 커피를 마시거나 노트북으로 작업할 때도 자연스럽게 이곳에 앉게 됩니다. 친구들이 놀러 왔을 때 네 명이 함께
+                                    사용하기에도 충분했고 테이블 하나만으로 다이닝 공간이 제대로 만들어진 느낌이라 만족하고 있어요.</p>
+                            </div>
+                            <div class="story-product">
+                                <a href="#">
+                                    <figure>
+                                        <span class="like-badge"><img src="./img/heart-1.svg" alt="좋아요하트">43</span>
+                                        <img src="./img/c2-2.jpg" alt="MORI OVAL DINING TABLE / 모리 오벌 다이닝 테이블">
+                                    </figure>
+                                    <div class="story-product-txt">
+                                        <div class="product-name">
+                                            MORI OVAL DINING TABLE / 모리 오벌 다이닝 테이블
+                                        </div>
+                                        <div class="product-category">
+                                            다이닝 · 식탁
+                                        </div>
+                                        <!-- <div class="pay-original">
+                                            <span>249,000</span>원
+                                        </div> -->
+                                        <div class="pay-discount">
+                                            <!-- <div class="discount">30%</div> -->
+                                            <div class="pay"><b>249,000</b>원</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <img src="./img/con2-3.jpg" alt="TONE 1200 SIDEBOARD / 톤 1200 사이드보드 스토리 섬네일">
+                            </figure>
+                            <div class="story-txt">
+                                <div class="stars">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                </div>
+                                <h4>수납장을 들였을 뿐인데 주방이 훨씬 정돈돼 보여요</h4>
+                                <p>주방에 자잘한 물건들이 계속 밖에 나와 있는 게 신경 쓰여서 수납장을 찾다가 선택했어요. 수납력이 가장 중요했지만 너무 평범한 디자인은 싫었는데 컬러와
+                                    손잡이 디자인이 마음에 들었습니다. 처음에는 세이지 색상이 다른 가구들과 잘 어울릴지 조금 걱정했는데 생각보다 차분한 색이라 주방에 자연스럽게 포인트가
+                                    되더라고요. 자주 사용하는 컵이나 접시, 작은 주방용품을 전부 정리할 수 있어서 상판도 훨씬 깔끔해졌습니다. 상판 위에는 커피머신과 작은 조명만
+                                    올려뒀는데 제가 원했던 홈카페 분위기도 자연스럽게 만들어졌어요. 수납가구지만 공간 분위기를 바꿔주는 가구라는 점이 가장 마음에 듭니다.</p>
+                            </div>
+                            <div class="story-product">
+                                <a href="#">
+                                    <figure>
+                                        <span class="like-badge"><img src="./img/heart-1.svg" alt="좋아요하트">91</span>
+                                        <img src="./img/c2-3.jpg" alt="TONE 1200 SIDEBOARD / 톤 1200 사이드보드">
+                                    </figure>
+                                    <div class="story-product-txt">
+                                        <div class="product-name">
+                                            TONE 1200 SIDEBOARD / 톤 1200 사이드보드
+                                        </div>
+                                        <div class="product-category">
+                                            다이닝 · 주방 수납
+                                        </div>
+                                        <!-- <div class="pay-original">
+                                            <span>159,000</span>원
+                                        </div> -->
+                                        <div class="pay-discount">
+                                            <!-- <div class="discount">30%</div> -->
+                                            <div class="pay"><b>159,000</b>원</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <img src="./img/con2-4.jpg" alt="NOMA FABRIC BED Q / 노마 패브릭 베드 Q 스토리 섬네일">
+                            </figure>
+                            <div class="story-txt">
+                                <div class="stars">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                    <img src="./img/star.svg" alt="좋아요 별">
+                                </div>
+                                <h4>하루 중 가장 편안하게 머무는 공간이 됐습니다</h4>
+                                <p>침실은 최대한 편안한 분위기로 만들고 싶어서 화려한 디자인보다는 오래 봐도 질리지 않는 침대를 찾고 있었어요. 헤드보드가 패브릭이라 공간이 부드러워
+                                    보이고 기대서 책을 읽을 때도 생각보다 편합니다. 특히 크림 컬러가 밝기만 한 색이 아니라 살짝 따뜻한 톤이라 브라운이나 오렌지 계열 침구와 정말 잘
+                                    어울렸어요. 프레임도 바닥에 너무 붙어 있지 않아서 답답해 보이지 않고 침실 전체가 이전보다 훨씬 넓어 보이는 느낌입니다. 침대 하나를 바꿨을 뿐인데
+                                    침구나 조명까지 다시 꾸미게 될 정도로 공간 분위기가 마음에 들어요. 요즘은 집에서 가장 좋아하는 장소가 침실이 됐습니다.</p>
+                            </div>
+                            <div class="story-product">
+                                <a href="#">
+                                    <figure>
+                                        <span class="like-badge"><img src="./img/heart-1.svg" alt="좋아요하트">27</span>
+                                        <img src="./img/c2-4.jpg" alt="NOMA FABRIC BED Q / 노마 패브릭 베드 Q">
+                                    </figure>
+                                    <div class="story-product-txt">
+                                        <div class="product-name">
+                                            NOMA FABRIC BED Q / 노마 패브릭 베드 Q
+                                        </div>
+                                        <div class="product-category">
+                                            침실 · 침대
+                                        </div>
+                                        <!-- <div class="pay-original">
+                                            <span>1,690,000</span>원
+                                        </div> -->
+                                        <div class="pay-discount">
+                                            <!-- <div class="discount">30%</div> -->
+                                            <div class="pay"><b>1,690,000</b>원</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <script>
+                    const reviewStory = new Swiper('.review-story-wrap', {
+                        breakpoints: {
+                            100: {
+                                slidesPerView: 1.3,
+                                spaceBetween: 12,
+                            },
+                            340: {
+                                slidesPerView: 2.3,
+                                spaceBetween: 12,
+                            },
+                            768: {
+                                slidesPerView: 3.3,
+                                spaceBetween: 14,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 16,
+                            },
+                        },
+                        autoplay: {
+                            delay: 3000
+                        }
+                    });
+                </script>
+            </div>
+        </section>
+
+        <!-- 특가상품섹션 -->
+        <section class="con3">
+            <div class="common-frame">
+                <div class="title">
+                    <h1>THIS WEEK’S SPECIAL</h1>
+                    <span></span>
+                    <p>이번 주, 놓치기 아쉬운 MODAM의 특별한 셀렉션을 만나보세요.</p>
+                </div>
+                <ul class="sale grid-list">
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/sale1.jpg" alt="BLOC 블록 모듈 소파">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4 class="title-1">BLOC 블록 모듈 소파</h4>
+                                <p class="desc-1">낮고 넓은 직사각형 모듈을 조합한 4인용 패브릭 소파입니다. 따뜻한 베이지 컬러와 코랄 쿠션이 거실에 편안한 리듬을 더합니다.
+                                </p>
+                                <div class="pay-frame">
+                                    <div class="pay-original">
+                                        <span>2,180,000</span>원
+                                    </div>
+                                    <div class="pay-discount">
+                                        <div class="discount">30%</div>
+                                        <div class="pay"><b>1,526,000</b>원</div>
+                                    </div>
+                                </div>
+                                <span class="like-badge noab"><img src="./img/heart-1.svg" alt="좋아요하트">428</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+
+    <div id="footer-wrap">
+        <!-- footer.html 파일의 내용이 들어오는 영역 -->
+    </div>
+</body>
+
+</html>

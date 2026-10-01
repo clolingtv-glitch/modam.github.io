@@ -1,0 +1,100 @@
+footer{
+    background-color: var(--gray-900);
+    color: var(--gray-0);
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+footer .common-frame{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.foot-navi{
+    display: flex;
+    justify-content: space-between;
+
+}
+.footmenu{
+    display: flex;
+    gap: 2rem;
+    font-size: var(--fs-h4);
+    font-weight: var(--fw2);
+    margin-bottom: 2rem;
+}
+.stli{
+    color: var(--sub-teal);
+}
+.sns{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+.coinfo{
+    width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(50px,1fr));
+    gap: 1rem 1rem;
+    align-items: center;
+}
+.coinfo dd{
+    font-weight: var(--fw2);
+}
+.foot2{
+    width: 450px;
+}
+.logof img{
+    height: 2rem;
+    margin-bottom: 1.5rem;
+}
+.slogan{
+    font-size: var(--fs-h3);
+    font-weight: var(--fw2);
+    margin-bottom: 0.5rem;
+}
+.brand-desc{
+    line-height: var(--lh2);
+}
+.cscon h2{
+    font-weight: var(--fw2);
+    margin-bottom: 1rem;
+}
+.cstime {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(50px,244px));
+    gap: 1rem 1rem;
+    align-items: center;
+}
+.cstime dd,.dayoff{
+    font-weight: var(--fw2);
+}
+.copy{
+    text-align: center;
+}
+
+@media (max-width:1398px){
+    .foot-navi{
+        flex-direction: column-reverse;
+        justify-content: initial;
+        gap: 2rem;
+    }
+    .sns{
+        justify-content: flex-start;
+    }
+    .coinfo{
+        width: auto;
+    }
+    .foot2{
+        width: auto;
+    }
+}
+@media (max-width:768px){
+    .footmenu{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem 1rem;
+    }
+    .coinfo{
+        grid-template-columns: repeat(2,minmax(50px,1fr));
+    }
+}
